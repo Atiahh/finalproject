@@ -8,7 +8,7 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-st.image('https://miro.medium.com/max/1400/1*nfK3vGZkTa4GrO7yWpcS-Q.png', caption='Iris Flower')
+st.image('https://miro.medium.com/max/1400/1*nfK3vGZkTa4GrO7yWpcS-Q.png', caption='Iris Flower Types')
 
 st.sidebar.header('User Input Parameters')
 
