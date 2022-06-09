@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from Pillow import Image
+from PIL import Image
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -40,7 +40,7 @@ prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 #st.write('0 :"Iris-setosa", 1: "Iris-versicolor", 2: "Iris-virginica"')
-image = Image.open('iris.jpg')
+image = Image.open('iris-setosa.jpg')
 st.image(image, caption='Iris Setosa')
 
 st.subheader('Prediction')
