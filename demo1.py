@@ -8,8 +8,6 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-
-
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
