@@ -28,8 +28,8 @@ st.subheader('User Input parameters')
 st.write(df)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/Atiahh/finalproject/main/IRIS.csv')
-X = iris.loc[['sepal_length','sepal_width','petal_length','petal_width'], :]
-Y = iris.species
+X = iris[['sepal_length','sepal_width','petal_length','petal_width']]
+Y = iris['species']
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
